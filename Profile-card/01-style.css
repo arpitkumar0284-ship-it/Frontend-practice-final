@@ -14,6 +14,41 @@ body {
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 4px 15px gray;
+    transition: 0.3s;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+}
+
+.profile-card h1 {
+    margin-bottom: 5px;
+    font-size: 28px;
+}
+
+.profile-card p {
+    color: gray;
+    line-height: 1.5;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.skills span {
+    padding: 6px 12px;
+    background-color: lightgray;
+    border-radius: 15px;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.skills span:hover {
+    background-color: blue;
+    color: white;
 }
 
 .profile-card button {
@@ -27,4 +62,14 @@ body {
 
 .profile-card button:hover {
     background-color: darkblue;
+}
+
+@media (max-width: 600px) {
+    .profile-card {
+        width: 80%;
+    }
+
+    .skills {
+        flex-wrap: wrap;
+    }
 }
